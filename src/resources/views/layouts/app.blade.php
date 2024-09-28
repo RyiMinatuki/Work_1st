@@ -8,10 +8,13 @@
 </head>
 
 <body>
-    <header>
-        
+    <header class="header">
+
     </header>
     
+    <main class="main">
+        
+    </main>
 </body>
 
 </html>

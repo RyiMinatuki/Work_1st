@@ -7,9 +7,14 @@
     <title>register</title>
 </head>
 
-
 <body>
+    <header class="header">
+
+    </header>
     
+    <main class="main">
+
+    </main>
 </body>
 
 

@@ -6,7 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Attendance</title>
 </head>
+
 <body>
+    <header class="header">
+    </header> 
     
+    <main class="main">
+        
+    </main>
 </body>
+
 </html>
