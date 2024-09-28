@@ -39,6 +39,12 @@
     <main class="main">
         @yield('content')
     </main>
+
+    <footer class="footer">
+        <div class="footer__inner">
+            <p>&copy; 2024 Atte, inc.</p>
+        </div>
+    </footer>
 </body>
 
 </html>
