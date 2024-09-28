@@ -1,21 +1,9 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>register</title>
-</head>
+@extends('layouts.app')
 
-<body>
-    <header class="header">
+@section('css')
+    <link rel="stylesheet" href="{{ asset('css/register.css')}}">
+@endsection
 
-    </header>
+@section('content')
     
-    <main class="main">
-
-    </main>
-</body>
-
-
-</html>
+@endsection
