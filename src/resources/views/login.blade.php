@@ -5,7 +5,5 @@
 @endsection
 
 @section('content')
-    <div class="welcome-message">
-        <a href="" class="welcome-message__contents"></a>
-    </div>
+    
 @endsection
