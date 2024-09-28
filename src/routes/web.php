@@ -18,13 +18,13 @@ use App\Http\Controllers\UserController;
 */
 
 // ホームページ
-Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('/', [HomeController::class, 'index']);
 
 // 勤怠管理ページ
-Route::get('/attendance', [AttendanceController::class, 'index'])->name('attendance');
+Route::get('/attendance', [AttendanceController::class, 'index']);
 
 // ログインページ
-Route::get('/login', [UserController::class, 'showLoginForm'])->name('login');
+Route::get('/login', [UserController::class, 'index']);
 
 // 会員登録ページ
-Route::get('/register', [UserController::class, 'showRegisterForm'])->name('register');
+Route::get('/register', [UserController::class, 'index']);
