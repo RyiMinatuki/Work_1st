@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AttendanceController;
 use App\Http\Controllers\BreaksController;
-use App\Http\Controllers\UserController;
+use App\Http\Controllers\UsersController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,13 +18,13 @@ use App\Http\Controllers\UserController;
 */
 
 // ホームページ
-Route::get('/', [HomeController::class, 'index']);
+Route::get('/', [HomeController::class, 'index'])->name('home');
 
 // 勤怠管理ページ
-Route::get('/attendance', [AttendanceController::class, 'index']);
+Route::get('/attendance', [AttendanceController::class, 'index'])->name('attendance');
 
 // ログインページ
-Route::get('/login', [UserController::class, 'index']);
+Route::get('/login', [UsersController::class, 'showLoginForm'])->name('login');
 
 // 会員登録ページ
-Route::get('/register', [UserController::class, 'index']);
+Route::get('/register', [UsersController::class, 'showRegisterForm'])->name('register');
