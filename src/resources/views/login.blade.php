@@ -5,5 +5,9 @@
 @endsection
 
 @section('content')
-    
+    <div class="title">
+        <h1 class="title-content">
+            ログイン
+        </h1>
+    </div>
 @endsection

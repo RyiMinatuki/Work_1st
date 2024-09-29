@@ -17,21 +17,23 @@
                 <a href="" class="header__logo">
                     Atte
                 </a>
-                <nav>
-                    <ul class="header-nav">
-                        <li class="header-nav__item">
-                            <a href="" class="header-nav__link">
-                                ホーム
-                            </a>
-                            <a href="" class="header-nav__link">
-                                日付一覧
-                            </a>
-                            <a href="" class="header-nav__link">
-                                ログアウト
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
+                @if (!in_array(Route::currentRouteName(), ['login', 'register']))
+                    <nav>
+                        <ul class="header-nav">
+                            <li class="header-nav__item">
+                                <a href="" class="header-nav__link">
+                                   ホーム
+                                </a>
+                                <a href="" class="header-nav__link">
+                                    日付一覧
+                                </a>
+                                <a href="" class="header-nav__link">
+                                    ログアウト
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                @endif
             </div>
         </div>
     </header>
