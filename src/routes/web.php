@@ -18,13 +18,19 @@ use App\Http\Controllers\UsersController;
 */
 
 // ホームページ
-Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('/', [UsersController::class, 'showLoginForm'])->name('home');
 
-// 勤怠管理ページ
-Route::get('/attendance', [AttendanceController::class, 'index'])->name('attendance');
-
-// ログインページ
+// ログインページ（GET）
 Route::get('/login', [UsersController::class, 'showLoginForm'])->name('login');
 
-// 会員登録ページ
+// ログイン処理（POST）
+Route::post('/login', [UsersController::class, 'login'])->name('login.submit');
+
+// 会員登録ページ（GET）
 Route::get('/register', [UsersController::class, 'showRegisterForm'])->name('register');
+
+// 会員登録処理（POST）
+Route::post('/register', [UsersController::class, 'register'])->name('register.submit');
+
+// 勤怠管理ページ（日付を含む）
+Route::get('/attendance/{date}', [AttendanceController::class, 'show'])->name('attendance');

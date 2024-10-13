@@ -5,14 +5,38 @@
 @endsection
 
 @section('content')
-    <div class="date-select">
-        <div class="date-select__buttons">
-            <a href="" class="date-select__buttons-left">&lt;</a>
-            <a href="" class="date-select__buttons-right">&gt;</a>
+    <div class="attendance-container">
+        <div class="attendance-header">
+            <a href="{{ route('attendance', ['date' => $prevDate]) }}" class="attendance-nav">&lt;</a>
+            <span class="attendance-date">{{ $currentDate }}</span>
+            <a href="{{ route('attendance', ['date' => $nextDate]) }}" class="attendance-nav">&gt;</a>
         </div>
 
-        <h1 class="date">
-            2024/09/28
-        </h1>
+        <table class="attendance-table">
+            <thead>
+                <tr>
+                    <th>名前</th>
+                    <th>勤務開始</th>
+                    <th>勤務終了</th>
+                    <th>休憩時間</th>
+                    <th>勤務時間</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach ($attendances as $attendance)
+                <tr>
+                    <td>{{ $attendance->name }}</td>
+                    <td>{{ $attendance->start_time }}</td>
+                    <td>{{ $attendance->end_time }}</td>
+                    <td>{{ $attendance->break_time }}</td>
+                    <td>{{ $attendance->work_time }}</td>
+                </tr>
+                @endforeach
+            </tbody>
+        </table>
+
+        <div class="pagination">
+            {{ $attendances->links() }}
+        </div>
     </div>
 @endsection
