@@ -1,4 +1,8 @@
-.login-container {
+a {
+    text-decoration: none;
+}
+
+.register-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -6,7 +10,7 @@
     height: 100vh;
 }
 
-.login-title {
+.register-title {
     font-size: 24px;
     margin-bottom: 20px;
 }
@@ -33,8 +37,9 @@
     cursor: pointer;
 }
 
-.register-link {
+.login-link {
     margin-top: 10px;
     font-size: 14px;
+    display: inline;
     text-align: center;
 }

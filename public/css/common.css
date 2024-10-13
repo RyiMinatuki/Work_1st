@@ -1,0 +1,12 @@
+a {
+    text-decoration: none !important;
+}
+
+body {
+    background-color: red !important;
+}
+
+.header {
+    background-color: #fff;
+    height: 10vw;
+}
