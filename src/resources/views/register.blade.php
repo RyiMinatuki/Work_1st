@@ -36,6 +36,8 @@
             <button type="submit" class="btn-submit">会員登録</button>
         </form>
 
-        <p class="login-link">アカウントをお持ちの方はこちらから <a href="{{ route('login') }}">ログイン</a></p>
+        <p class="login-text">アカウントをお持ちの方はこちらから 
+            <br><a class="login-link" href="{{ route('login') }}">ログイン</a>
+        </p>
     </div>
 @endsection
