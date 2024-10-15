@@ -1,14 +1,12 @@
 a {
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
-
+.main {
+    background-color: red !important;
+}
 
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 30px;
     background-color: #fff;
     height: 10vw;
 }
