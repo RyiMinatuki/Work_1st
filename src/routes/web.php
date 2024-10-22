@@ -18,7 +18,7 @@ use App\Http\Controllers\UsersController;
 */
 
 // ホームページ
-Route::get('/', [UsersController::class, 'showLoginForm'])->name('home');
+Route::get('/', [HomeController::class, 'index'])->name('home');
 
 // ログインページ（GET）
 Route::get('/login', [UsersController::class, 'showLoginForm'])->name('login');

@@ -20,7 +20,7 @@ class UsersController extends Controller
 
         if (Auth::attempt($credentials)) {
             // ログイン成功したら、勤怠管理ページにリダイレクト
-            return redirect()->route('attendance', ['date' => now()->toDateString()]);
+            return redirect()->route('/', ['date' => now()->toDateString()]);
         }
 
         // ログイン失敗したらエラーメッセージ
